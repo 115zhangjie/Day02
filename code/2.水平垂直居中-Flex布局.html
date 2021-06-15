@@ -6,6 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        /* 为了解决侧轴的居中对齐的问题 */
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            display: flex; /* 设置Flex布局 */
+            justify-content: center; /* 设置主轴的对齐方式为居中 */
+            align-items: center; /* 设置侧轴的对齐方式为居中 */
+        }
+
         .box {
             width: 200px;
             height: 200px;
@@ -14,6 +30,7 @@
     </style>
 </head>
 <body>
+    <div class="box"></div>
     <div class="box"></div>
 </body>
 </html>
